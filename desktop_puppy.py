@@ -77,6 +77,7 @@ class DesktopPet(QMainWindow):
         y = screen_geometry.height() - self.window_size                # Calculate y coordinates
         self.move(x, y)         # Move the window to the specified location
         
+        
         # Initialize pet status variables: Set the initial state according to the current time, and set the mood and physical strength values ​​at the same time.
         self.status = self.get_time_based_status()  # Initial state (study, sleep, guitar, game, idle)
         self.mood = 5          # Set the initial mood value to 5 (the range is 0~5, and it will automatically enter the idle state when it is 0)
@@ -91,8 +92,10 @@ class DesktopPet(QMainWindow):
         self.bubble_label = None     # Tags used to display the "Say something" input bubble
         
         # Set window properties: no border, always topped, transparent background and displayed as a separate window
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Window)
-        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Window | Qt.NoDropShadowWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
+        self.setAutoFillBackground(False)
+
         
         # Initialize the main tag (used to display gif animations), allowing content to automatically scale
         self.label = QLabel(self)
@@ -101,7 +104,7 @@ class DesktopPet(QMainWindow):
         self.setFixedSize(self.window_size, self.window_size)  # Fixed window size
         
         self.show()            # Display window
-        self.repaint
+        self.repaint()
         self.raise_()          # Place the window on top
         self.activateWindow()  # Activate the window to gain focus
         
