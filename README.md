@@ -5,7 +5,7 @@
 ## Overview
 Desktop Puppy is an interactive desktop companion designed to show your own status virtually. It is a puppy based on Samoyed and likes to sleep very much. It can change states automatically based on time, respond to user interactions, and display animations corresponding to its mood and energy. The pet can be manually controlled via a right-click menu and responds to actions such as dragging and double-clicking.
 
-<img src="assets/idle.gif" alt="Demo GIF" width="300">
+<img src="README_assets/cover_pic.png" alt="Image" width="300">
 
 
 ## Features
@@ -19,6 +19,10 @@ The puppy automatically changes its state based on the current time:
 - **20:00-23:00** → Game  
 - **Other times** → Idle  
 
+<figure>
+     <img src="assets/idle.gif" alt="Demo GIF" width="250"> 
+     <figcaption>GIF for idle state</figcaption>
+</figure> 
 
 ### 2. Right-Click Context Menu Features  
 The right-click menu provides several options for manual control:  
@@ -29,7 +33,8 @@ The right-click menu provides several options for manual control:
 - **Clear Bubble:** Removes the speech bubble from the puppy.  
 - **Reset Function:** Resets mood and energy once per day.  
 - **Quit:** Closes the application.  
-
+- 
+<img src="README_assets/menu.png" alt="Image" width="250">
 
 ### 3. Mood and Energy System  
 The puppy has mood and energy values ranging from **0 to 5**.  
@@ -38,6 +43,8 @@ The puppy has mood and energy values ranging from **0 to 5**.
 - If mood or energy is too low (below **2**), the state switch is prevented, and a warning is displayed.  
 - If **mood reaches 1**, the puppy is forced into idle mode.  
 - If **energy reaches 1**, the puppy is forced into sleep mode.  
+
+<img src="README_assets/show_status.png" alt="Image" width="300">
 
 
 ### 4. Click Interaction System  
