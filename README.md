@@ -20,9 +20,12 @@ The puppy automatically changes its state based on the current time:
 - **Other times** → Idle  
 
 <figure>
-     <img src="assets/idle.gif" alt="Demo GIF" width="250"> 
-     <figcaption>GIF for idle state</figcaption>
-</figure> 
+  <img src="assets/idle.gif" alt="Demo GIF" width="250"> 
+  <figcaption style="font-style: italic;">
+    GIF for idle state
+  </figcaption>
+</figure>
+
 
 ### 2. Right-Click Context Menu Features  
 The right-click menu provides several options for manual control:  
@@ -33,8 +36,9 @@ The right-click menu provides several options for manual control:
 - **Clear Bubble:** Removes the speech bubble from the puppy.  
 - **Reset Function:** Resets mood and energy once per day.  
 - **Quit:** Closes the application.  
-- 
+
 <img src="README_assets/menu.png" alt="Image" width="250">
+
 
 ### 3. Mood and Energy System  
 The puppy has mood and energy values ranging from **0 to 5**.  
